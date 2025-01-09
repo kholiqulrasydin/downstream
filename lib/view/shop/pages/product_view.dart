@@ -168,16 +168,16 @@ class ProductView extends StatelessWidget {
                 child: MaterialButton(
                   onPressed: () {},
                   minWidth: SizeConfig.getWidth(context, 50),
-                  child: Text(
-                    'Tambahkan Keranjang',
-                    style: TextStyle(color: kwhite),
-                  ),
                   color: kprimaryColor,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12)),
                   padding: EdgeInsets.symmetric(
                       horizontal: SizeConfig.getWidth(context, 10),
                       vertical: 20),
+                  child: Text(
+                    'Tambahkan Keranjang',
+                    style: TextStyle(color: kwhite),
+                  ),
                 ))
           ],
         ),

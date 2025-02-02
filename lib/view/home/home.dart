@@ -1,5 +1,6 @@
 import 'package:downstream/constant/theme.dart';
 import 'package:downstream/view/cart/cart.dart';
+import 'package:downstream/view/notification/main_notification.dart';
 import 'package:downstream/view/services/size.dart';
 import 'package:downstream/view/setor_sampah/pick.dart';
 import 'package:flutter/material.dart';
@@ -42,13 +43,15 @@ class MainHome extends StatelessWidget {
         ),
         actions: [
           IconButton(
-              onPressed: () {},
+              onPressed: () => Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => MainNotification())),
               icon: Icon(
                 Icons.notifications_rounded,
                 color: kwhite,
               )),
           IconButton(
-              onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => MainCart())),
+              onPressed: () => Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => MainCart())),
               icon: Icon(
                 Icons.shopping_cart_rounded,
                 color: kwhite,

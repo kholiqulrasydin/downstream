@@ -207,19 +207,6 @@ class Checkout extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Column(children: [
-                        SizedBox(
-                          width: SizeConfig.getWidth(context, 80),
-                          child: Row(
-                            children: [
-                              Expanded(
-                                  child: Divider(
-                                thickness: 2,
-                              ))
-                            ],
-                          ),
-                        )
-                      ])
                     ],
                   ),
                 ),
